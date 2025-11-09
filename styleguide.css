@@ -1,13 +1,16 @@
-/* Schrijf hier de verschillende stijlen, die gedeeld gaan
-   worden door jullie projecten */
+@layer styleguide {
+
+    /* Schrijf hier de verschillende stijlen, die gedeeld gaan
+    worden door jullie projecten */
+
+    /* Kleuren */
+    .color-example {
+        background-color: #bada55;
+    }
+
+    /* Typografie */
 
 
-/* Kleuren */
-.color-example {
-    background-color: #bada55;
+    /* Formulier elementen */
+
 }
-
-/* Typografie */
-
-
-/* Formulier elementen */

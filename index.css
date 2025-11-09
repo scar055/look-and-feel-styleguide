@@ -1,6 +1,7 @@
 /* Generieke stijlen, waarschijnlijk hoeven jullie deze niet aan te passen */
 
-@layer styleguide {
+@layer generic {
+
   html, body {
     scroll-behavior: smooth;
   }
@@ -43,4 +44,5 @@
       background: #ccc;
     }
   }
+
 }
