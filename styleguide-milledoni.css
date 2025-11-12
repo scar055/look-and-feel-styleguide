@@ -5,12 +5,55 @@
 @layer styleguide {
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
-
+  :root {
+    --secondary-color: #212121;
+    --primary-background: #F6F5F5;
+    --secondary-text: #464646;
+    --primary-chat-text-background: #D6D6D6;
+    --secondary-background: #FFFFFF;
+    --primary-color: #E2B100;
+    --sustainable-label: #20A687;
+    --timeless-label: #B2291F;
+    --digital-label: #466EBF;
+    --experience-label: #AA2677;
+  }
   /* Kleuren */
   .color-example {
-    background-color: #bada55;
+    color: #FFF;
   }
-
+  
+  .color-1 {
+    background-color: var(--secondary-color);
+  }
+  .color-2 {
+    background-color: var(--primary-background);
+  }
+  .color-3 {
+    background-color: var(--secondary-text);
+  }
+    .color-4 {
+    background-color: var(--primary-chat-text-background);
+  }
+    .color-5 {
+    background-color: var(--secondary-background);
+    color: black;
+    border: 1px solid black;
+  }
+    .color-6 {
+    background-color: var(--primary-color);
+  }
+    .color-7 {
+    background-color: var(--sustainable-label);
+  }
+    .color-8 {
+    background-color: var(--timeless-label);
+  }
+    .color-9 {
+    background-color: var(--digital-label);
+  }
+    .color-10 {
+    background-color: var(--experience-label);
+  }
   /* Typografie */
   /* Formulier elementen */
 }
