@@ -17,7 +17,7 @@
     --digital-label: #466ebf;
     --experience-label: #aa2677;
   }
-  /* Kleuren */
+  /* Kleuren ********************************************/
   .color-example {
     color: #fff;
   }
@@ -55,8 +55,20 @@
   .experience-label {
     background-color: var(--experience-label);
   }
-  /* Typografie */
-  /* Formulier elementen */
+
+  /* Typografie *******************************************/
+
+  @font-face {
+    font-family: parkinsans;
+    src: url(./font/Parkinsans-VariableFont_wght.ttf);
+  }
+
+  #typografie {
+    font-family: parkinsans;
+  }
+
+
+  /* Formulier elementen ***********************************/
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -108,4 +120,7 @@
       color: var(--secondary-color);
     }
   }
+
+  /* extra */
+
 }
