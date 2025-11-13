@@ -7,21 +7,21 @@
        gedeeld gaan worden door jullie projecten */
   :root {
     --secondary-color: #212121;
-    --primary-background: #F6F5F5;
+    --primary-background: #f6f5f5;
     --secondary-text: #464646;
-    --primary-chat-text-background: #D6D6D6;
-    --secondary-background: #FFFFFF;
-    --primary-color: #E2B100;
-    --sustainable-label: #20A687;
-    --timeless-label: #B2291F;
-    --digital-label: #466EBF;
-    --experience-label: #AA2677;
+    --primary-chat-text-background: #d6d6d6;
+    --secondary-background: #ffffff;
+    --primary-color: #e2b100;
+    --sustainable-label: #20a687;
+    --timeless-label: #b2291f;
+    --digital-label: #466ebf;
+    --experience-label: #aa2677;
   }
   /* Kleuren */
   .color-example {
-    color: #FFF;
+    color: #fff;
   }
-  
+
   .secondary-color {
     background-color: var(--secondary-color);
   }
