@@ -198,6 +198,9 @@
     background-color: var(--primary-background);
     fill: var(--secondary-color);
   }
+  .search-button:focus-visible {
+    outline: var(--primary-color) 3px solid;
+  }
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
