@@ -8,6 +8,9 @@ This project is licensed under the terms of the [MIT license](./LICENSE).
 
 
 ## Afspraken 
+
+Figma styleguide: https://www.figma.com/design/lnL31QZgmx8gm0WhUI8fwI/interface-inventory-milledoni?node-id=0-1&p=f&t=blb9wsFDTDDVcEsi-0
+
 Classnames 
 - Taal Engels.
 - BEM principes gebruiken. (block, element, modifier) header-link-button:hover
