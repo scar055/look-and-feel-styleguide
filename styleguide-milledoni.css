@@ -2,6 +2,11 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+@font-face {
+  font-family: parkinsans;
+  src: url("./font/Parkinsans-VariableFont_wght.ttf");
+}
+
 @layer styleguide {
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
@@ -16,6 +21,20 @@
     --timeless-label: #b2291f;
     --digital-label: #466ebf;
     --experience-label: #aa2677;
+
+    --line-height-heading: 1.2;
+    --line-height-text: 1.4;
+
+    --font-size-h1: 2em;
+    --font-size-h2: 1.5em;
+    --font-size-h3: 1.3em;
+    --font-size-h4: 1.15em;
+    --font-size-h5: 1.1em;
+    --font-size-h6: 1em;
+    --font-size-p: 1em;
+
+    --font-weight-standard: 400;
+    --font-weight-heading: 700;
   }
   /* Kleuren ********************************************/
   .color-example {
@@ -57,14 +76,67 @@
   }
 
   /* Typografie *******************************************/
-
-  @font-face {
-    font-family: parkinsans;
-    src: url(./font/Parkinsans-VariableFont_wght.ttf);
+  .heading1 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h1);
   }
 
-  #typografie {
-    font-family: parkinsans;
+  .heading2 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h2);
+  }
+
+  .heading3 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h3);
+  }
+
+  .heading4 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h4);
+  }
+
+  .heading5 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h5);
+  }
+
+  .heading6 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h6);
+  }
+
+  .alinea-title {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-heading);
+  }
+
+  .alinea-description {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-standard);
+  }
+
+  .ul-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .ol-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .table-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .blockquote-mil p {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+    font-weight: lighter;
   }
 
   /* Formulier elementen */
@@ -169,4 +241,18 @@
   }
 
   /* extra */
+
+  /* .main-article{
+    border: solid var(--secondary-color);
+    max-width: 20rem;
+    font-family: parkinsans;
+    cursor: pointer;
+
+    &:hover {
+    }
+  }
+  .main-article img {
+    display: block;
+    width: 19rem;
+  } */
 }
