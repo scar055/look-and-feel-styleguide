@@ -11,50 +11,18 @@
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
   :root {
-    --secondary-color: #212121;
-    --primary-background: #f6f5f5;
-    --secondary-text: #464646;
-    --primary-chat-text-background: #d6d6d6;
-    --secondary-background: #ffffff;
+    /* Kleuren */
     --primary-color: #e2b100;
-    --sustainable-label: #20a687;
-    --timeless-label: #b2291f;
-    --digital-label: #466ebf;
-    --experience-label: #aa2677;
-
-    --line-height-heading: 1.2;
-    --line-height-text: 1.4;
-
-    --font-size-h1: 2em;
-    --font-size-h2: 1.5em;
-    --font-size-h3: 1.3em;
-    --font-size-h4: 1.15em;
-    --font-size-h5: 1.1em;
-    --font-size-h6: 1em;
-    --font-size-p: 1em;
-
-    --font-weight-standard: 400;
-    --font-weight-heading: 700;
+    --primary-background-color: #f6f5f5;
+    --secondary-background-color: #ffffff;
+    --secondary-color: #212121;
+    --secondary-text-color: #464646;
+    --user-chat-background-color: #d6d6d6;
+    --sustainable-label-color: #20a687;
+    --timeless-label-color: #b2291f;
+    --digital-label-color: #466ebf;
+    --experience-label-color: #aa2677;
   }
-  /* focus ring */
-  input,
-  button,
-  a,
-  textarea {
-    &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
-      outline: var(--primary-color) 3px solid;
-    }
-  }
-
-  .footer-input {
-    &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
-      outline: var(--secondary-color) 3px solid;
-    }
-  }
-
-  /* Kleuren ********************************************/
   .color-example {
     color: #fff;
   }
@@ -63,17 +31,17 @@
     background-color: var(--secondary-color);
   }
   .primary-bg {
-    background-color: var(--primary-background);
+    background-color: var(--primary-background-color);
     color: var(--secondary-color);
   }
   .secondary-text {
-    background-color: var(--secondary-text);
+    background-color: var(--secondary-text-color);
   }
   .chat-bg {
-    background-color: var(--primary-chat-text-background);
+    background-color: var(--user-chat-background-color);
   }
   .white-bg {
-    background-color: var(--secondary-background);
+    background-color: var(--secondary-background-color);
     color: black;
     border: 1px solid black;
   }
@@ -81,16 +49,16 @@
     background-color: var(--primary-color);
   }
   .sustainable-label {
-    background-color: var(--sustainable-label);
+    background-color: var(--sustainable-label-color);
   }
   .timeless-label {
-    background-color: var(--timeless-label);
+    background-color: var(--timeless-label-color);
   }
   .digital-label {
-    background-color: var(--digital-label);
+    background-color: var(--digital-label-color);
   }
   .experience-label {
-    background-color: var(--experience-label);
+    background-color: var(--experience-label-color);
   }
 
   /* Typografie *******************************************/
@@ -166,8 +134,8 @@
     border-radius: 5px;
     position: relative;
   }
-  .primary-bg {
-    background-color: var(--primary-background);
+  .primary-bg-search {
+    background-color: var(--primary-background-color);
     color: var(--secondary-color);
   }
   .primary-text {
@@ -177,7 +145,63 @@
     outline: var(--primary-color) 3px solid;
   }
 
-  .search-button {
+  .secondary-search-bg {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    position: relative;
+  }
+
+  .ai-button-secondary {
+    position: absolute;
+    right: 23.5em;
+    background: none;
+    border: none;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+  }
+
+  .ai-button-secondary svg {
+    display: block;
+  }
+
+  .secondary-search {
+    width: 50%;
+    height: 3em;
+  }
+
+  .secondary-search-input {
+    width: 50%;
+    padding: 0.8em 3.5em 0.8em 3.2em;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    outline: none;
+    font-size: 1em;
+  }
+
+  .secondary-search-input::placeholder {
+    color: #bfbfbf;
+  }
+
+  .ai-button-primary {
+    position: absolute;
+    left: 1.5em;
+    background: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .send-button {
     position: absolute;
     right: 0.8em;
     background-color: var(--secondary-color);
@@ -191,21 +215,21 @@
     fill: #fff;
     cursor: pointer;
     &svg {
-      fill: var(--secondary-background);
+      fill: var(--secondary-background-color);
     }
   }
-  .search-button:hover {
-    background-color: var(--primary-background);
+  .send-button:hover {
+    background-color: var(--primary-background-color);
     fill: var(--secondary-color);
   }
-  .search-button:focus-visible {
+  .send-button:focus-visible {
     outline: var(--primary-color) 3px solid;
   }
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
     border: none;
-    fill: var(--secondary-background);
+    fill: var(--secondary-background-color);
     background-color: var(--secondary-color);
 
     @media (prefers-reduced-motion: no-preference) {
@@ -213,7 +237,7 @@
     }
 
     &:hover {
-      background-color: var(--primary-background);
+      background-color: var(--primary-background-color);
       fill: var(--secondary-color);
     }
 
@@ -226,7 +250,7 @@
     width: 20em;
     height: 3em;
     background-color: var(--secondary-text);
-    color: var(--secondary-background);
+    color: var(--secondary-background-color);
     border: none;
     border-radius: 5px;
 
@@ -235,7 +259,7 @@
     }
 
     &:hover {
-      background-color: var(--primary-background);
+      background-color: var(--primary-background-color);
       color: var(--secondary-color);
     }
 
