@@ -214,10 +214,12 @@
     justify-content: center;
     fill: #fff;
     cursor: pointer;
-    &svg {
-      fill: var(--secondary-background-color);
-    }
   }
+
+  .send-button svg {
+    fill: var(--secondary-background-color);
+  }
+
   .send-button:hover {
     background-color: var(--primary-background-color);
     fill: var(--secondary-color);
