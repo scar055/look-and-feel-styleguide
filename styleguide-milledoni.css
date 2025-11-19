@@ -63,6 +63,7 @@
   }
   .primary-bg-color {
     background-color: var(--primary-background-color);
+    border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
   }
   .secondary-text-color {
@@ -302,6 +303,14 @@
     justify-content: center;
     fill: #fff;
     cursor: pointer;
+  }
+
+  /* input[type="checkbox"] {
+    -webkit-appearance: none;
+  } */
+
+  .checkbox-select:checked {
+    background-color: var(--primary-color);
   }
 
   .send-button svg {
