@@ -296,7 +296,6 @@
     background-color: var(--secondary-color);
     border: none;
     border-radius: 50%;
-    height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
