@@ -44,14 +44,12 @@
   a,
   textarea {
     &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
       outline: var(--primary-color) 3px solid;
     }
   }
 
   .footer-input {
     &:focus-visible {
-      /* box-shadow: 0px 0px 0px 4px var(--secondary-color); */
       outline: var(--secondary-color) 3px solid;
     }
   }
@@ -289,7 +287,7 @@
   .submit-button {
     width: 20em;
     height: 3em;
-    background-color: var(--secondary-text);
+    background-color: var(--secondary-text-color);
     color: var(--secondary-background-color);
     border: none;
     border-radius: 5px;
@@ -306,6 +304,24 @@
     &:active {
       background-color: var(--primary-color);
       color: var(--secondary-color);
+    }
+  }
+
+  .file-picture {
+    display: flex;
+    flex-direction: column;
+    font-family: "parkinsans", sans-serif;
+    color: var(--secondary-text-color);
+    margin-block-end: 1em;
+    svg {
+      border-radius: 10px;
+      border: 1px solid var(--secondary-text-color);
+      padding: 2em;
+      margin-block-start: 0.25em;
+      fill: var(--secondary-text-color);
+    }
+    #file-input {
+      display: none;
     }
   }
 
