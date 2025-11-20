@@ -403,7 +403,7 @@
 
   /* extra */
 
-  article {
+  .article-product {
     position: relative;
     background-color: var(--secondary-background);
     width: 300px;
