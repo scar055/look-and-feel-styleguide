@@ -11,13 +11,13 @@
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
   :root {
+    /* Kleuren */
     --primary-color: #e2b100;
     --secondary-color: #212121;
     --primary-background-color: #f6f5f5;
     --secondary-background-color: #ffffff;
     --secondary-text-color: #464646;
     --user-chat-background-color: #d6d6d6;
-    /* Kleuren */
     --sustainable-label-color: #20a687;
     --timeless-label-color: #b2291f;
     --digital-label-color: #466ebf;
@@ -103,6 +103,59 @@
   .heading2 {
     font-family: parkinsans, sans-serif;
     font-size: var(--font-size-h2);
+  }
+
+  .heading3 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h3);
+  }
+
+  .heading4 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h4);
+  }
+
+  .heading5 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h5);
+  }
+
+  .heading6 {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-h6);
+  }
+
+  .alinea-title {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-heading);
+  }
+
+  .alinea-description {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-standard);
+  }
+
+  .ul-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .ol-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .table-mil {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+  }
+
+  .blockquote-mil p {
+    font-family: parkinsans, sans-serif;
+    font-size: var(--font-weight-standard);
+    font-weight: lighter;
   }
 
   .heading3 {
@@ -307,6 +360,29 @@
     }
   }
 
+  .input-label-text {
+    appearance: none;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+    width: 394.2px;
+    height: 63px;
+    font-family: "parkinsans", sans-serif;
+    font-size: 1em;
+    padding-left: 1em;
+  }
+
+  .label-textarea {
+    appearance: none;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
+    width: 394.2px;
+    height: 199px;
+    font-family: "parkinsans", sans-serif;
+    font-size: 1em;
+    padding-left: 1em;
+  }
   .file-picture {
     display: flex;
     flex-direction: column;
@@ -327,17 +403,101 @@
 
   /* extra */
 
-  /* .main-article{
-    border: solid var(--secondary-color);
-    max-width: 20rem;
-    font-family: parkinsans;
+  article {
+    position: relative;
+    background-color: var(--secondary-background);
+    width: 300px;
+    height: 400px;
+    padding: 4px 4px 0px 4px;
     cursor: pointer;
+    font-family: "parkinsans", sans-serif;
 
     &:hover {
+      translate: 0 -1px;
+    }
+
+    .article-product-img {
+      img {
+        width: 300px;
+        aspect-ratio: 1/0.9;
+        object-fit: cover;
+      }
+
+      .article-add-list {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        cursor: pointer;
+        height: 75px;
+        width: 75px;
+        border: none;
+        z-index: 1;
+        display: block;
+
+        border-radius: 50%;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+
+      .article-tags {
+        position: absolute;
+        bottom: 138px;
+        left: 10px;
+        flex-wrap: wrap;
+        color: var(--secondary-background-color);
+      }
+
+      .article-tag-timeless {
+        background: var(--timeless-label-color);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+      }
+
+      .article-tag-sustainable {
+        background: var(--sustainable-label-color);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+      }
+
+      .article-tag-experience {
+        background: var(--experience-label-color);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+      }
+
+      .article-tag-digital {
+        background: var(--digital-label-color);
+        color: var(--secondary-background);
+        font-size: 12px;
+        padding: 3px 8px;
+      }
+    }
+
+    p {
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+
+    .article-statistics {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      svg {
+        max-height: 40px;
+        width: auto;
+      }
+
+      span:nth-of-type(1) {
+        margin-right: auto;
+      }
     }
   }
-  .main-article img {
-    display: block;
-    width: 19rem;
-  } */
 }
