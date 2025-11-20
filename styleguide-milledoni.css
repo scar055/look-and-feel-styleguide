@@ -321,7 +321,7 @@
     margin-right: 8px;
   }
 
-  input[type="checkbox"]:not(:checked), 
+  input[type="checkbox"]:not(:checked),
   input[type="checkbox"]:checked {
     position: absolute;
     left: -9999%;
@@ -339,7 +339,7 @@
     color: var(--secondary-color);
     background-color: var(--checkbox-background-color);
     margin-bottom: 10px;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   .unselectable {
