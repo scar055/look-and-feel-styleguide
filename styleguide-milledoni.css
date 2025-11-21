@@ -26,13 +26,13 @@
     --line-height-heading: 1.2;
     --line-height-text: 1.4;
 
-    --font-size-h1: 2em;
-    --font-size-h2: 1.5em;
-    --font-size-h3: 1.3em;
-    --font-size-h4: 1.15em;
-    --font-size-h5: 1.1em;
-    --font-size-h6: 1em;
-    --font-size-p: 1em;
+    --font-size-title: 2em;
+    --font-size-subject: 1.5em;
+    --font-size-heading: 1.3em;
+    --font-size-headline: 1.15em;
+    --font-size-caption: 1.1em;
+    --font-size-subtitle: 1em;
+    --font-size-text: 1em;
 
     --font-weight-standard: 400;
     --font-weight-heading: 700;
@@ -95,98 +95,45 @@
   }
 
   /* Typografie *******************************************/
-  .heading1 {
+  .title {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-title);
   }
 
-  .heading2 {
+  .subject {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-subject);
   }
 
-  .heading3 {
+  .heading {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-heading);
   }
 
-  .heading4 {
+  .headline {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-headline);
   }
 
-  .heading5 {
+  .caption {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-caption);
   }
 
-  .heading6 {
+  .subtitle {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h6);
+    font-size: var(--font-size-subtitle);
   }
 
   .alinea-title {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-text);
     font-weight: var(--font-weight-heading);
   }
 
   .alinea-description {
     font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-p);
-    font-weight: var(--font-weight-standard);
-  }
-
-  .ul-mil {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-weight-standard);
-  }
-
-  .ol-mil {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-weight-standard);
-  }
-
-  .table-mil {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-weight-standard);
-  }
-
-  .blockquote-mil p {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-weight-standard);
-    font-weight: lighter;
-  }
-
-  .heading3 {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h3);
-  }
-
-  .heading4 {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h4);
-  }
-
-  .heading5 {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h5);
-  }
-
-  .heading6 {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-h6);
-  }
-
-  .alinea-title {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-p);
-    font-weight: var(--font-weight-heading);
-  }
-
-  .alinea-description {
-    font-family: parkinsans, sans-serif;
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-text);
     font-weight: var(--font-weight-standard);
   }
 
@@ -405,7 +352,7 @@
 
   .article-product {
     position: relative;
-    background-color: var(--secondary-background);
+    background-color: var(--secondary-background-color);
     width: 300px;
     height: 400px;
     padding: 4px 4px 0px 4px;
@@ -452,29 +399,29 @@
 
       .article-tag-timeless {
         background: var(--timeless-label-color);
-        color: var(--secondary-background);
-        font-size: var(--font-size-p);
+        color: var(--secondary-background-color);
+        font-size: var(--font-size-text);
         padding: .1875rem .5rem;
       }
 
       .article-tag-sustainable {
         background: var(--sustainable-label-color);
-        color: var(--secondary-background);
-        font-size: var(--font-size-p);
+        color: var(--secondary-background-color);
+        font-size: var(--font-size-text);
         padding: .1875rem .5rem;
       }
 
       .article-tag-experience {
         background: var(--experience-label-color);
-        color: var(--secondary-background);
-        font-size: var(--font-size-p);
+        color: var(--secondary-background-color);
+        font-size: var(--font-size-text);
         padding: .1875rem .5rem;
       }
 
       .article-tag-digital {
         background: var(--digital-label-color);
-        color: var(--secondary-background);
-        font-size: var(--font-size-p);
+        color: var(--secondary-background-color);
+        font-size: var(--font-size-text);
         padding: .1875rem .5rem;
       }
     }
