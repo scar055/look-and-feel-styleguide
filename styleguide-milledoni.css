@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: parkinsans;
-  src: url("./font/Parkinsans-VariableFont_wght.ttf");
+  src: url("/font/Parkinsans-VariableFont_wght.ttf");
 }
 
 @layer styleguide {
