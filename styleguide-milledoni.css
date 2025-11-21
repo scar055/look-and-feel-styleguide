@@ -56,7 +56,7 @@
   }
 
   .color-example {
-    color: #fff;
+    color: var(--secondary-background-color);
   }
 
   .secondary-color {
@@ -77,8 +77,8 @@
   }
   .white-bg-color {
     background-color: var(--secondary-background-color);
-    color: black;
-    border: 1px solid black;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
   }
   .highlight-color {
     background-color: var(--primary-color);
@@ -327,8 +327,12 @@
     left: -9999%;
   }
 
+  .label-font-weight {
+    font-weight: var(--font-weight-heading);
+  }
+
   input[type="checkbox"] + label {
-    font-weight: 500;
+    font-weight: var(--font-weight-standard);
     font-size: 16px;
     font-family: parkinsans;
     display: inline-block;
