@@ -453,29 +453,29 @@
       .article-tag-timeless {
         background: var(--timeless-label-color);
         color: var(--secondary-background);
-        font-size: 12px;
-        padding: 3px 8px;
+        font-size: var(--font-size-p);
+        padding: .1875rem .5rem;
       }
 
       .article-tag-sustainable {
         background: var(--sustainable-label-color);
         color: var(--secondary-background);
-        font-size: 12px;
-        padding: 3px 8px;
+        font-size: var(--font-size-p);
+        padding: .1875rem .5rem;
       }
 
       .article-tag-experience {
         background: var(--experience-label-color);
         color: var(--secondary-background);
-        font-size: 12px;
-        padding: 3px 8px;
+        font-size: var(--font-size-p);
+        padding: .1875rem .5rem;
       }
 
       .article-tag-digital {
         background: var(--digital-label-color);
         color: var(--secondary-background);
-        font-size: 12px;
-        padding: 3px 8px;
+        font-size: var(--font-size-p);
+        padding: .1875rem .5rem;
       }
     }
 
