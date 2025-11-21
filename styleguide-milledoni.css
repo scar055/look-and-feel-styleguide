@@ -328,11 +328,15 @@
   }
 
   .label-font-weight {
+    font-weight: var(--font-weight-standard);
+  }
+
+  .label-font-weight-heading {
     font-weight: var(--font-weight-heading);
   }
 
   input[type="checkbox"] + label {
-    font-weight: var(--font-weight-standard);
+    /* font-weight: var(--font-weight-standard); */
     font-size: 16px;
     font-family: parkinsans;
     display: inline-block;
