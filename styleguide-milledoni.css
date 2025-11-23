@@ -266,13 +266,20 @@
     position: relative;
     cursor: pointer;
     margin-right: 8px;
-  }
+  } 
 
-  input[type="checkbox"]:not(:checked),
-  input[type="checkbox"]:checked {
-    position: absolute;
-    left: -9999%;
-  }
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"]:focus-visible + label {
+  outline: var(--primary-color) 3px solid;
+  outline-offset: 3px;
+}
+
 
   .label-font-weight {
     font-weight: var(--font-weight-standard);
@@ -280,6 +287,11 @@
 
   .label-font-weight-heading {
     font-weight: var(--font-weight-heading);
+  }
+
+  input[type="checkbox"]:focus-visible + label {
+    outline: var(--primary-color) 3px solid;
+    outline-offset: 3px;
   }
 
   input[type="checkbox"] + label {
@@ -295,6 +307,9 @@
     background-color: var(--checkbox-background-color);
     margin-bottom: 10px;
     transition: 0.2s ease-in-out;
+    &:focus-visible {
+      outline: var(--primary-color) 3px solid;
+    }
   }
 
   .unselectable {
@@ -468,28 +483,28 @@
         background: var(--timeless-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-sustainable {
         background: var(--sustainable-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-experience {
         background: var(--experience-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-digital {
         background: var(--digital-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
     }
 
