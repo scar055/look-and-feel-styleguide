@@ -1,4 +1,5 @@
-  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+ // checkbox ENTER key functie
+ document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
   cb.addEventListener('keydown', e => {
     if (e.key === "Enter") {
       e.preventDefault();
