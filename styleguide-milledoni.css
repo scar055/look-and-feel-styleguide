@@ -194,11 +194,11 @@
 
   .ai-button-secondary {
     position: absolute;
-    right: 24.3em;
+    right: 24.5em;
     background: none;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
   }
 
@@ -219,7 +219,7 @@
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    border-radius: 20px;
+    border-radius: 10em;
     outline: none;
     font-size: 1em;
   }
@@ -251,7 +251,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #fff;
+    color: var(--secondary-background-color);
     cursor: pointer;
   }
 
@@ -334,17 +334,19 @@ input[type="checkbox"]:focus-visible + label {
     transition: 0.1s ease-in-out;
   }
 
-  .send-button svg {
+  /* .send-button svg {
     fill: var(--secondary-background-color);
-  }
+  } */
 
   .send-button:hover {
     background-color: var(--primary-background-color);
-    fill: var(--secondary-color);
+    color: var(--secondary-color);
   }
+
   .send-button:focus-visible {
     outline: var(--primary-color) 3px solid;
   }
+
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -366,13 +368,14 @@ input[type="checkbox"]:focus-visible + label {
       fill: var(--secondary-color);
     }
   }
+  
   .submit-button {
-    width: 20em;
-    height: 3em;
-    background-color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-background-color);
+    padding-inline: 1em;
+    padding-block: 0.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10em;
 
     @media (prefers-reduced-motion: no-preference) {
       transition: 0.2s ease-out;
