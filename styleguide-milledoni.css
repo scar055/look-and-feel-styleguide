@@ -334,10 +334,6 @@ input[type="checkbox"]:focus-visible + label {
     transition: 0.1s ease-in-out;
   }
 
-  /* .send-button svg {
-    fill: var(--secondary-background-color);
-  } */
-
   .send-button:hover {
     background-color: var(--primary-background-color);
     color: var(--secondary-color);
