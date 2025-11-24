@@ -54,7 +54,6 @@
       outline: var(--secondary-color) 3px solid;
     }
   }
-
   .color-example {
     color: var(--secondary-background-color);
   }
@@ -194,11 +193,11 @@
 
   .ai-button-secondary {
     position: absolute;
-    right: 24.3em;
+    right: 24.5em;
     background: none;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
   }
 
@@ -219,7 +218,7 @@
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     border: 2px solid var(--secondary-color);
-    border-radius: 20px;
+    border-radius: 10em;
     outline: none;
     font-size: 1em;
   }
@@ -251,7 +250,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #fff;
+    color: var(--secondary-background-color);
     cursor: pointer;
   }
 
@@ -266,13 +265,20 @@
     position: relative;
     cursor: pointer;
     margin-right: 8px;
-  }
+  } 
 
-  input[type="checkbox"]:not(:checked),
-  input[type="checkbox"]:checked {
-    position: absolute;
-    left: -9999%;
-  }
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"]:focus-visible + label {
+  outline: var(--primary-color) 3px solid;
+  outline-offset: 3px;
+}
+
 
   .label-font-weight {
     font-weight: var(--font-weight-standard);
@@ -280,6 +286,11 @@
 
   .label-font-weight-heading {
     font-weight: var(--font-weight-heading);
+  }
+
+  input[type="checkbox"]:focus-visible + label {
+    outline: var(--primary-color) 3px solid;
+    outline-offset: 3px;
   }
 
   input[type="checkbox"] + label {
@@ -295,6 +306,9 @@
     background-color: var(--checkbox-background-color);
     margin-bottom: 10px;
     transition: 0.2s ease-in-out;
+    &:focus-visible {
+      outline: var(--primary-color) 3px solid;
+    }
   }
 
   .unselectable {
@@ -319,17 +333,15 @@
     transition: 0.1s ease-in-out;
   }
 
-  .send-button svg {
-    fill: var(--secondary-background-color);
-  }
-
   .send-button:hover {
     background-color: var(--primary-background-color);
-    fill: var(--secondary-color);
+    color: var(--secondary-color);
   }
+
   .send-button:focus-visible {
     outline: var(--primary-color) 3px solid;
   }
+
   .button {
     border-radius: 50%;
     aspect-ratio: 1;
@@ -351,6 +363,7 @@
       fill: var(--secondary-color);
     }
   }
+  
   .submit-button {
     background-color: var(--secondary-color);
     color: var(--secondary-background-color);
@@ -468,28 +481,28 @@
         background: var(--timeless-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-sustainable {
         background: var(--sustainable-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-experience {
         background: var(--experience-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
 
       .article-tag-digital {
         background: var(--digital-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: .1875rem .5rem;
+        padding: 0.1875rem 0.5rem;
       }
     }
 
