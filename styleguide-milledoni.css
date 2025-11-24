@@ -352,12 +352,12 @@
     }
   }
   .submit-button {
-    width: 20em;
-    height: 3em;
-    background-color: var(--secondary-text-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-background-color);
+    padding-inline: 1em;
+    padding-block: 0.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 10em;
 
     @media (prefers-reduced-motion: no-preference) {
       transition: 0.2s ease-out;
