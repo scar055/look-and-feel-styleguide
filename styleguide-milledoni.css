@@ -175,6 +175,7 @@
     width: 100%;
   }
   .primary-text {
+    border: none;
     height: 45px;
     width: 100%;
   }
