@@ -54,7 +54,6 @@
       outline: var(--secondary-color) 3px solid;
     }
   }
-
   .color-example {
     color: var(--secondary-background-color);
   }
