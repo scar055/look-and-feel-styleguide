@@ -43,7 +43,8 @@
   input,
   button,
   a,
-  textarea {
+  textarea,
+  .article-product {
     &:focus-visible {
       outline: var(--primary-color) 3px solid;
     }
@@ -434,11 +435,11 @@ input[type="checkbox"]:focus-visible + label {
   .article-product {
     position: relative;
     background-color: var(--secondary-background-color);
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     padding: 4px 4px 0px 4px;
     cursor: pointer;
-    font-family: "parkinsans", sans-serif;
+    font-family: parkinsans, sans-serif;
 
     &:hover {
       translate: 0 -1px;
@@ -446,9 +447,13 @@ input[type="checkbox"]:focus-visible + label {
 
     .article-product-img {
       img {
-        width: 300px;
+        width: 200px;
         aspect-ratio: 1/0.9;
         object-fit: cover;
+        
+        &:focus-visible{
+          outline: none;
+        }
       }
 
       .article-add-list {
@@ -457,8 +462,8 @@ input[type="checkbox"]:focus-visible + label {
         right: 10px;
         background: transparent;
         cursor: pointer;
-        height: 75px;
-        width: 75px;
+        height: 58px;
+        width: 58px;
         border: none;
         z-index: 1;
         display: block;
@@ -472,7 +477,7 @@ input[type="checkbox"]:focus-visible + label {
 
       .article-tags {
         position: absolute;
-        bottom: 138px;
+        bottom: 130px;
         left: 10px;
         flex-wrap: wrap;
         color: var(--secondary-background-color);
@@ -482,28 +487,28 @@ input[type="checkbox"]:focus-visible + label {
         background: var(--timeless-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: 0.1875rem 0.5rem;
+        padding: .15rem;
       }
 
       .article-tag-sustainable {
         background: var(--sustainable-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: 0.1875rem 0.5rem;
+        padding: .15rem;
       }
 
       .article-tag-experience {
         background: var(--experience-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: 0.1875rem 0.5rem;
+        padding: .15rem;
       }
 
       .article-tag-digital {
         background: var(--digital-label-color);
         color: var(--secondary-background-color);
         font-size: var(--font-size-text);
-        padding: 0.1875rem 0.5rem;
+        padding: .15rem;
       }
     }
 
@@ -517,10 +522,11 @@ input[type="checkbox"]:focus-visible + label {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: absolute;
+      bottom: -1px;
 
-      svg {
-        max-height: 40px;
-        width: auto;
+      img{
+        height: 2rem;
       }
 
       span:nth-of-type(1) {
