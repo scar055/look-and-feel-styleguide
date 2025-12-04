@@ -184,7 +184,7 @@
     border: none;
     height: 45px;
     width: 100%;
-    font-family: parkinsans;
+    font-family: parkinsans, sans-serif;
   }
   .primary-color-bg:focus-visible {
     outline: var(--primary-color) 3px solid;
@@ -237,7 +237,7 @@
     border-radius: 10em;
     outline: none;
     font-size: 1em;
-    font-family: parkinsans;
+    font-family: parkinsans, sans-serif;
   }
 
   .secondary-search-input::placeholder {
