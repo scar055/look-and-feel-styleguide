@@ -8,6 +8,7 @@
 }
 
 @layer styleguide {
+
   /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
   :root {
@@ -55,6 +56,7 @@
       outline: var(--secondary-color) 3px solid;
     }
   }
+
   .color-example {
     color: var(--secondary-background-color);
   }
@@ -62,41 +64,51 @@
   .secondary-color {
     background-color: var(--secondary-color);
   }
+
   .primary-bg-color {
     background-color: var(--primary-background-color);
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
   }
+
   .secondary-text-color {
     background-color: var(--secondary-text-color);
   }
+
   .checkbox-background-color {
     background-color: var(--checkbox-background-color);
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
   }
+
   .chat-bg-color {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     background-color: var(--user-chat-background-color);
   }
+
   .white-bg-color {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
   }
+
   .highlight-color {
     background-color: var(--primary-color);
   }
+
   .sustainable-label-color {
     background-color: var(--sustainable-label-color);
   }
+
   .timeless-label-color {
     background-color: var(--timeless-label-color);
   }
+
   .digital-label-color {
     background-color: var(--digital-label-color);
   }
+
   .experience-label-color {
     background-color: var(--experience-label-color);
   }
@@ -173,29 +185,25 @@
     padding: 0.4em;
     border-radius: 5px;
     position: relative;
+    margin-block-end: 1em;
   }
+
   .primary-bg-search {
     background-color: var(--primary-background-color);
     color: var(--secondary-color);
     border: none;
     width: 100%;
   }
+
   .primary-text {
     border: none;
     height: 45px;
     width: 100%;
     font-family: parkinsans, sans-serif;
   }
+
   .primary-color-bg:focus-visible {
     outline: var(--primary-color) 3px solid;
-  }
-
-  .secondary-search-bg {
-    display: flex;
-    align-items: center;
-    background-color: var(--secondary-background-color);
-    padding: 0.5em 1em;
-    border-radius: 7px;
   }
 
   .ai-button-secondary {
@@ -212,8 +220,6 @@
 
   .secondary-search-wrapper {
     position: relative;
-    width: 40%;
-    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -291,8 +297,8 @@
     width: 0;
     height: 0;
   }
-u
-  input[type="checkbox"]:focus-visible + label {
+
+  u input[type="checkbox"]:focus-visible+label {
     outline: var(--primary-color) 3px solid;
     outline-offset: 3px;
   }
@@ -305,12 +311,12 @@ u
     font-weight: var(--font-weight-heading);
   }
 
-  input[type="checkbox"]:focus-visible + label {
+  input[type="checkbox"]:focus-visible+label {
     outline: var(--primary-color) 3px solid;
     outline-offset: 3px;
   }
 
-  input[type="checkbox"] + label {
+  input[type="checkbox"]+label {
     /* font-weight: var(--font-weight-standard); */
     font-size: 16px;
     font-family: parkinsans;
@@ -323,6 +329,7 @@ u
     background-color: var(--checkbox-background-color);
     margin-bottom: 10px;
     transition: 0.2s ease-in-out;
+
     &:focus-visible {
       outline: var(--primary-color) 3px solid;
     }
@@ -337,7 +344,7 @@ u
     user-select: none;
   }
 
-  input[type="checkbox"]:checked + label {
+  input[type="checkbox"]:checked+label {
     border: 1px solid var(--primary-background-color);
     border-radius: 20px;
     color: var(--secondary-color);
@@ -427,12 +434,14 @@ u
     font-size: 1em;
     padding-left: 1em;
   }
+
   .file-picture {
     display: flex;
     flex-direction: column;
     font-family: "parkinsans", sans-serif;
     color: var(--secondary-text-color);
     margin-block-end: 1em;
+
     svg {
       border-radius: 10px;
       border: 1px solid var(--secondary-text-color);
@@ -440,6 +449,7 @@ u
       margin-block-start: 0.25em;
       fill: var(--secondary-text-color);
     }
+
     #file-input {
       display: none;
     }
